@@ -1,4 +1,4 @@
-# Alexandra Lostetter — Aspiring Data Analyst / Scientist
+# Aspiring Data Analyst / Scientist
 
 **UNC Chapel Hill | B.S. in Statistics & Analytics + Minor in Data Science (May 2025)**  
 Aspiring data scientist with hands-on experience in data wrangling, visualization, and statistical modeling. Passionate about using data to drive meaningful insights and solve real-world problems.
