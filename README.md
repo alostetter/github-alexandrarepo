@@ -7,7 +7,7 @@ Aspiring data scientist with hands-on experience in data wrangling, visualizatio
 
 ## Technical Skills
 
-- **Languages & Tools**: Python, R, SQL, DAX, Power BI, Excel
+- **Languages & Tools**: Python, R, SQL, DAX, Power BI, Excel 
 - **Libraries**: pandas, numpy, matplotlib, seaborn, ggplot2, dplyr, JuMP
 - **Concepts**: Statistical modeling, data visualization, machine learning, optimization, experimental design
 
