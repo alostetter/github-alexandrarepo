@@ -17,7 +17,8 @@ Aspiring data scientist with hands-on experience in data wrangling, visualizatio
 
 **University of North Carolina at Chapel Hill**  
 _B.S. in Statistics & Analytics, Minor in Data Science_  
-_Expected Graduation: May 2025_  
+_Gradution Date: May 2025_  
+_GPA : 3.5_
 Department of Statistics and Operations Research
 
 ---
