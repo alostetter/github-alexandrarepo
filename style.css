@@ -86,17 +86,16 @@ body {
   border-color: rgba(255, 255, 255, 0.9);
 }
 
-.headshot-large {
+.headshot-top {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 90px; /* much smaller */
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 2rem auto;
-  border: 3px solid #6366f1;
-  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.3);
+  margin: 1rem auto;
+  border: 2px solid #6366f1;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
 }
-
 .headshot-container {
   display: flex;
   justify-content: center;
