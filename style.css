@@ -88,13 +88,27 @@ body {
 
 .headshot-large {
   display: block;
-  width: 50px;       /* smaller size */
-  height: 50px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin: 2rem auto;
   border: 3px solid #6366f1;
   box-shadow: 0 6px 15px rgba(99, 102, 241, 0.3);
+}
+
+.headshot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 
