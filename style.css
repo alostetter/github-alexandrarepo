@@ -197,3 +197,29 @@ a:hover {
   border-radius: 12px;
   font-family: 'Poppins', sans-serif;
 }
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 60ch;
+}
+
+.about-headshot {
+  flex: 0 0 120px;
+  text-align: center;
+}
+
+.about-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #6366f1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
