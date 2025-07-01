@@ -86,16 +86,15 @@ body {
   border-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Big headshot specifically for home page */
 .headshot-large {
   display: block;
-  width: 300px;          /* large size */
-  height: 300px;
+  width: 150px;       /* smaller size */
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 2rem auto;     /* center horizontally with margin top/bottom */
-  border: 5px solid #6366f1; /* matching brand color border */
-  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+  margin: 2rem auto;
+  border: 3px solid #6366f1;
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.3);
 }
 
 
