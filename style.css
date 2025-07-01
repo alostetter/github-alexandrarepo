@@ -198,11 +198,12 @@ a:hover {
   font-family: 'Poppins', sans-serif;
 }
 
-.about-container {
+/* About Section with Small Headshot */
+.about-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .about-text {
@@ -214,23 +215,7 @@ a:hover {
   text-align: center;
 }
 
-.about-image {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #6366f1;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-.about-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.headshot-small {
+.about-image, .headshot-small {
   width: 60px !important;
   height: 60px !important;
   border-radius: 50%;
