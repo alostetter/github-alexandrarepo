@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexandra Lostetter</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandra Lostetter | Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">Alexandra Lostetter</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-      <div class="card">
-        <img src="headshot.jpg" alt="Alexandra Lostetter">
-        <h1>Alexandra Lostetter</h1>
-        <p>Aspiring data scientist passionate about solving complex problems with creativity and code.</p>
-        <a href="#contact">Get in Touch ↓</a>
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Data Scientist & Analyst</h2>
+      <p>Turning data into insight through rigorous analysis, smart design, and curiosity.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a recent graduate from UNC Chapel Hill with degrees in Statistics & Analytics and Data Science. My work at Veradigm and Relias, along with a strong academic background, has given me real-world experience solving problems with data using tools like Python, R, and Power BI.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section dark">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><strong>Languages:</strong> Python, R, SQL, Java, DAX</div>
+        <div class="skill"><strong>Tools:</strong> Power BI, Excel, VSCode, IntelliJ, R Studio</div>
+        <div class="skill"><strong>Techniques:</strong> Regression, ML, Visualization, Data Cleaning</div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section class="section" id="education">
-      <div class="card">
-        <h2>🎓 Education</h2>
-        <p>
-          <strong>University of North Carolina at Chapel Hill</strong><br>
-          B.S. in Statistics & Analytics and Data Science<br>
-          Department of Statistics and Operations Research
-        </p>
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-entry">
+        <h3>Veradigm – Data Analyst Intern</h3>
+        <p>Built Power BI dashboards and automated Python pipelines to drive healthcare analytics and reporting efficiency.</p>
       </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section" id="experience">
-      <div class="card">
-        <h2>💼 Experience</h2>
-        <p><strong>Veradigm</strong> – Data Analyst Intern<br>
-          Built Power BI dashboards, automated workflows, and supported clinical data insights.
-        </p>
-        <p><strong>Relias</strong> – Analytics Intern<br>
-          Created reporting pipelines and developed performance metrics for key stakeholders.
-        </p>
+      <div class="experience-entry">
+        <h3>Relias – Data Analyst Intern</h3>
+        <p>Used SQL and R to analyze user behavior and engagement trends; delivered reports using Excel and Power BI.</p>
       </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-      <div class="card">
-        <h2>🧠 Skills</h2>
-        <p>
-          Python, R, SQL, Java, DAX<br>
-          Power BI, Excel, Git, VSCode, Intellij, R Studio<br>
-          Statistical Modeling, Machine Learning, Visualization
-        </p>
+      <div class="experience-entry">
+        <h3>Technically Speaking Podcast</h3>
+        <p>Hosted and produced a podcast exploring data science topics, helping to improve technical communication and leadership skills.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-      <div class="card">
-        <h2>🎙️ Projects</h2>
-        <p><strong>Technically Speaking</strong> – Podcast Host<br>
-          Interviewed data professionals, explored analytics topics, and grew an audience passionate about tech.
-        </p>
-      </div>
-    </section>
+  <section id="projects" class="section dark">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li><strong>Healthcare Dashboard:</strong> Designed interactive dashboards in Power BI for clinical data monitoring.</li>
+        <li><strong>Predictive Modeling:</strong> Developed logistic regression and random forest models using R and Python.</li>
+        <li><strong>Survey Analytics:</strong> Analyzed large-scale survey data and visualized insights for stakeholder reports.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-      <div class="card">
-        <h2>📬 Contact</h2>
-        <p>Let’s connect! Reach me below:</p>
-        <p>
-          <a href="mailto:alexandra@email.com">Email Me</a><br>
-          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        </p>
-      </div>
-    </section>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: alexandra.lostetter@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
 
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Alexandra Lostetter. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
 
