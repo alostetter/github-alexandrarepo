@@ -88,8 +88,8 @@ body {
 
 .headshot-large {
   display: block;
-  width: 150px;       /* smaller size */
-  height: 150px;
+  width: 50px;       /* smaller size */
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   margin: 2rem auto;
