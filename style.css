@@ -19,7 +19,6 @@ body {
   min-height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
   width: 220px;
   background-color: #111827;
@@ -30,23 +29,12 @@ body {
   left: 0;
   overflow-y: auto;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sidebar h1 {
-  font-family: 'Playfair Display', serif;
-  color: white;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  letter-spacing: 1px;
 }
 
 .sidebar ul {
   list-style: none;
-  width: 100%;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar ul li {
