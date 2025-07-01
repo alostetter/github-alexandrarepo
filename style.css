@@ -13,45 +13,55 @@ body {
   background-color: #f9fafb;
   color: #1f2937;
   line-height: 1.6;
+  display: flex;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.header {
+/* Sidebar */
+.sidebar {
+  width: 220px;
   background-color: #111827;
-  padding: 1rem 0;
+  height: 100vh;
+  padding: 2rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar h1 {
   color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.nav-links {
+.sidebar ul {
   list-style: none;
-  display: flex;
-  gap: 1.5rem;
 }
 
-.nav-links a {
+.sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul a {
   color: white;
   text-decoration: none;
   font-weight: 600;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+.sidebar ul a:hover {
+  background-color: #374151;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 220px;
+  padding: 2rem;
+  flex-grow: 1;
 }
 
 .hero {
@@ -59,6 +69,8 @@ body {
   color: white;
   text-align: center;
   padding: 4rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
 }
 
 .hero h2 {
@@ -85,12 +97,16 @@ body {
   background-color: #374151;
 }
 
+/* Sections */
 .section {
   padding: 3rem 0;
 }
 
 .section.dark {
   background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
 }
 
 h2 {
@@ -101,7 +117,7 @@ h2 {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
 }
 
@@ -113,6 +129,7 @@ h2 {
   box-shadow: 0 2px 5px rgba(0,0,0,0.04);
 }
 
+/* Experience + Projects */
 .experience-entry {
   margin-bottom: 2rem;
 }
@@ -126,6 +143,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
+/* Links */
 a {
   color: #3b82f6;
 }
@@ -134,11 +152,14 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
 .footer {
   background-color: #111827;
   color: white;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  margin-top: 2rem;
+  border-radius: 8px;
 }
 
