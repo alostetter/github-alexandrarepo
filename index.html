@@ -2,36 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alexandra Lostetter - Aspiring Data Analyst and Scientist Portfolio Website" />
   <title>Alexandra Lostetter | Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Sidebar -->
   <aside class="sidebar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <h1>Alexandra</h1>
+    <img src="headshot.jpg" alt="Alexandra Lostetter headshot" class="headshot" />
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </aside>
 
-<div class="main-content">
-  <section class="hero">
-    <div class="hero-bubble">
-      <h2>Alexandra Lostetter | Aspiring Data Analyst / Scientist</h2>
-    </div>
-    <p>Turning data into insight through rigorous analysis, smart design, and curiosity.</p>
-    <a href="contact.html" class="btn">Get in Touch</a>
-  </section>
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero-bubble">
+        <h2>Alexandra Lostetter</h2>
+        <p class="subtitle">Aspiring Data Analyst / Scientist</p>
+      </div>
+      <p>Turning data into insight through rigorous analysis, smart design, and curiosity.</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
 
+    <!-- Clean spacing below hero, headshot not overlapping -->
+    <section class="section" id="big-photo-section">
+      <div class="headshot-container">
+        <img src="headshot.jpg" alt="Alexandra Lostetter full image" class="headshot-large" />
+      </div>
+    </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Alexandra Lostetter. All rights reserved.</p>
-  </footer>
-</div>
+    <footer class="footer">
+      <p>&copy; 2025 Alexandra Lostetter. All rights reserved.</p>
+    </footer>
+  </main>
 
 </body>
 </html>
+
