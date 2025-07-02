@@ -12,29 +12,37 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f9fafb;
-  color: #1f2937;
+  background-color: #f8f9fa;
+  color: #2c3e50;
   line-height: 1.7;
   display: flex;
   min-height: 100vh;
 }
 
+/* Sidebar Navigation */
 .sidebar {
-  width: 220px;
-  background-color: #111827;
+  width: 240px;
+  background-color: #1e293b;
   height: 100vh;
   padding: 2rem 1rem;
   position: fixed;
   top: 0;
   left: 0;
   overflow-y: auto;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #f1f5f9;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .sidebar ul li {
@@ -42,7 +50,7 @@ body {
 }
 
 .sidebar ul a {
-  color: white;
+  color: #e2e8f0;
   text-decoration: none;
   font-weight: 500;
   display: block;
@@ -53,14 +61,14 @@ body {
 
 .sidebar ul a:hover,
 .sidebar ul a.active {
-  background-color: #374151;
-  transform: translateX(5px);
+  background-color: #334155;
+  transform: translateX(4px);
 }
 
-/* Main content */
+/* Main Content */
 .main-content {
-  margin-left: 220px;
-  padding: 2rem;
+  margin-left: 240px;
+  padding: 3rem 2rem;
   flex-grow: 1;
   max-width: 900px;
   width: 100%;
@@ -68,107 +76,90 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #6366f1, #3b82f6);
-  color: white;
-  text-align: center;
-  padding: 4rem 2rem;
+  background-color: #1e293b;
+  color: #f8fafc;
+  padding: 3.5rem 2rem;
   border-radius: 12px;
-  margin-bottom: 2.5rem;
-  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.25);
+  margin-bottom: 3rem;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(30, 41, 59, 0.25);
 }
 
 .hero-bubble {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  border-radius: 40px;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  cursor: default;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  user-select: none;
   font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
   font-weight: 700;
-  font-size: 2.5rem;
-}
-
-.hero-bubble:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 25px rgba(99, 102, 241, 0.7);
-  border-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 1rem 2.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  color: #cbd5e1;
   margin-top: 0.5rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.hero p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 1rem auto 2rem;
 }
 
 /* Button */
 .btn {
-  background-color: #1f2937;
+  background-color: #1e293b;
   color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  font-weight: 500;
   text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
   display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #374151;
+  background-color: #334155;
 }
 
 /* Sections */
 .section {
-  padding: 3rem 0;
+  margin-bottom: 3rem;
 }
 
 .section.dark {
-  background-color: #f3f4f6;
-  border-radius: 12px;
+  background-color: #f1f5f9;
   padding: 2rem;
-  margin: 2.5rem 0;
+  border-radius: 10px;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.25rem;
+  font-size: 2rem;
+  color: #1e293b;
   margin-bottom: 1.5rem;
-  color: #111827;
 }
 
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
 }
 
 .skill {
   background-color: white;
   padding: 1.25rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   transition: transform 0.2s ease;
 }
 
 .skill:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 /* Experience & Projects */
 .experience-entry {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .project-list {
@@ -178,14 +169,14 @@ h2 {
 
 .project-list li {
   margin-bottom: 1rem;
-  line-height: 1.8;
+  color: #374151;
 }
 
 /* Links */
 a {
-  color: #3b82f6;
+  color: #2563eb;
+  text-decoration: none;
   font-weight: 500;
-  word-break: break-word;
 }
 
 a:hover {
@@ -194,53 +185,46 @@ a:hover {
 
 /* Footer */
 .footer {
-  background-color: #111827;
-  color: white;
+  background-color: #1e293b;
+  color: #f1f5f9;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  margin-top: 2rem;
-  border-radius: 12px;
-  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  margin-top: 3rem;
 }
 
+/* About Page Styling */
 .about-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* vertical alignment */
+  justify-content: center;
   gap: 2rem;
   text-align: center;
   max-width: 900px;
-  margin: 0 auto;          /* center container */
+  margin: 0 auto;
 }
 
 .about-headshot {
-  flex: 0 0 140px;         /* fixed box width */
-  height: 140px;           /* fixed box height */
-  border: 3px solid #6366f1;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  flex: 0 0 140px;
+  height: 140px;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 3px solid #64748b;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   overflow: hidden;
-  border-radius: 12px;     /* subtle rounded corners */
 }
 
 .about-headshot img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;     /* keep aspect ratio */
-  display: block;
+  object-fit: cover;
 }
 
 .about-text {
   flex: 1 1 400px;
   font-size: 1rem;
-  color: #1f2937;
+  color: #2c3e50;
   line-height: 1.6;
-  text-align: left;       /* or center if you prefer */
+  text-align: left;
 }
-
-
