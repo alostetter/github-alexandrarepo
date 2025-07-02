@@ -22,7 +22,7 @@ body {
 /* Sidebar Navigation */
 .sidebar {
   width: 240px;
-  background-color: #1e293b;
+  background-color: #000000;
   height: 100vh;
   padding: 2rem 1rem;
   position: fixed;
