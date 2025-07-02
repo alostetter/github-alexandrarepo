@@ -74,29 +74,54 @@ body {
   max-width: 900px;
   width: 100%;
 }
-
-/* Hero Section */
-.hero {
-  background-color: #1e293b;
-  color: #f8fafc;
-  padding: 3.5rem 2rem;
-  border-radius: 12px;
-  margin-bottom: 3rem;
+.centered-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem); /* subtracting space from header/footer if needed */
+  padding: 0 2rem;
   text-align: center;
-  box-shadow: 0 6px 14px rgba(30, 41, 59, 0.25);
 }
 
-.hero-bubble {
+/* Hero Section with dark background */
+.hero-centered {
+  background-color: #1e3a8a; /* darker blue */
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-centered .hero-bubble {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  padding: 1.25rem 2.5rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
   font-family: 'Playfair Display', serif;
   font-size: 2.25rem;
   font-weight: 700;
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
-  padding: 1rem 2.5rem;
-  display: inline-block;
-  margin-bottom: 1rem;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.hero-centered .subtitle {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  margin: 1rem auto 2rem;
+  max-width: 600px;
+  color: #e2e8f0;
+}
+
+/* Button stays the same */
 
 .subtitle {
   font-size: 1.15rem;
