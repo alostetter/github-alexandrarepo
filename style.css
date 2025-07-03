@@ -100,7 +100,7 @@ body {
 
 .hero-centered .subtitle {
   font-size: 1.6rem;
-  color: #e0e7ff;
+  color: #fcfcfa;
   margin-top: 1rem;
   font-weight: 500;
 }
@@ -109,7 +109,7 @@ body {
   font-size: 1.4rem;
   margin: 2rem auto 2.5rem;
   max-width: 700px;
-  color: #f1f5f9;
+  color: #fcfcfa;
 }
 
 /* Headshot Image - centered below hero bubble */
