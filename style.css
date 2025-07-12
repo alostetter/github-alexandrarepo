@@ -17,6 +17,13 @@ body {
   min-height: 100vh;
 }
 
+body.home-page {
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('assets/nc-mountains.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
 /* Sidebar Navigation */
 .sidebar {
   width: 240px;
