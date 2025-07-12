@@ -83,26 +83,39 @@ body.home-page {
 .hero-centered {
   background-color: #92b8f7;
   color: white;
-  padding: 3rem 2rem;
-  border-radius: 20px;
-  max-width: 640px;
-  width: 100%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  margin-top: 4rem;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  max-width: 480px; /* narrower than before */
+  width: 90%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  margin-top: 3rem;
   text-align: center;
 }
 
 .hero-centered .hero-bubble {
   background-color: rgba(255, 255, 255, 0.08);
   border: 1.5px solid rgba(255, 255, 255, 0.2);
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
+  padding: 0.7rem 1.2rem;  /* less padding */
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;  /* smaller font */
   font-weight: 700;
   color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
+
+.hero-centered h2 {
+  font-size: 1.8rem; /* smaller heading */
+  margin-bottom: 0.3rem;
+}
+
+.hero-centered .hero-description {
+  font-size: 1rem;
+  margin: 1.5rem auto 2rem;
+  max-width: 100%; /* no need to limit further */
+  color: #fcfcfa;
+}
+
 
 .hero-centered .subtitle {
   font-size: 1.2rem;
