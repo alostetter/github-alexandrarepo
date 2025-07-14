@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
- 
+
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
@@ -64,6 +64,7 @@ body.home-page {
   transform: translateX(4px);
 }
 
+/* Main Content */
 .main-content {
   margin-left: 240px;
   padding: 2rem;
@@ -76,8 +77,11 @@ body.home-page .main-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* vertical stack */
+  text-align: center;     /* center text */
 }
 
+/* Signature Text */
 .signature-text {
   font-family: 'League Script', cursive;
   font-size: 4rem;
@@ -87,6 +91,86 @@ body.home-page .main-content {
   width: 0;
   animation: typewriter 5s steps(40) forwards;
   color: #000;
+  margin-bottom: 0.5rem;
+}
+
+/* Subtitle below signature */
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Blurb paragraph */
+.blurb {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.btn {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin: 0.5rem 0;
+}
+
+.btn:hover {
+  background-color: #334155;
+}
+
+.btn-sm {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #1a73e8;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-sm:hover {
+  background-color: #155ab6;
+}
+
+/* Boxes (e.g. hero-centered or section boxes) */
+.hero-centered {
+  background-color: #92b8f7;
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.hero-centered .hero-bubble {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Typewriter Animation */
@@ -95,4 +179,3 @@ body.home-page .main-content {
     width: 100%;
   }
 }
-
