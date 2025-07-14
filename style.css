@@ -1,19 +1,17 @@
-/* Google Fonts */
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
 
-/* Reset and base styles */
+/* Reset and Base Styles */
 * {
-  margin: 0; 
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
-
 body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
               url('nc-mountains.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
@@ -22,36 +20,9 @@ body {
   align-items: center;
 }
 
-.draw-container {
-  width: 100%;
-  max-width: 100vw;
-  padding: 2rem;
-}
-
-.signature-svg {
-  width: 100%;
-  height: auto;
-}
-
-.signature-path {
-  fill: none;
-  stroke: #000;
-  stroke-width: 2;
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 3000;
-  animation: draw 8s linear forwards;
-}
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 body.home-page {
-  background: 
-    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url('nc-mountains.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+              url('nc-mountains.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -66,14 +37,6 @@ body.home-page {
   left: 0;
   overflow-y: auto;
   box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
-}
-
-.sidebar h1 {
-  font-size: 1.8rem;
-  color: #f1f5f9;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-weight: 700;
 }
 
 .sidebar ul {
@@ -107,189 +70,26 @@ body.home-page {
   padding: 2rem;
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.hero-centered {
-  background-color: #92b8f7;
-  color: white;
-  padding: 2rem 1.5rem;
-  border-radius: 16px;
-  max-width: 480px; /* narrower than before */
-  width: 90%;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
-  margin-top: 3rem;
-  text-align: center;
+/* Animated Cursive Signature */
+.signature-text {
+  font-family: 'League Script', cursive;
+  font-size: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgba(0,0,0,0.75);
+  width: 0;
+  animation: typewriter 5s steps(40) forwards;
+  color: #000;
 }
 
-.hero-centered .hero-bubble {
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
-  padding: 0.7rem 1.2rem;  /* less padding */
-  border-radius: 10px;
-  margin-bottom: 0.8rem;
-  font-size: 1.1rem;  /* smaller font */
-  font-weight: 700;
-  color: white;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-}
-
-.hero-centered h2 {
-  font-size: 1.8rem; /* smaller heading */
-  margin-bottom: 0.3rem;
-}
-
-.hero-centered .hero-description {
-  font-size: 1rem;
-  margin: 1.5rem auto 2rem;
-  max-width: 100%; /* no need to limit further */
-  color: #fcfcfa;
-}
-
-
-.hero-centered .subtitle {
-  font-size: 1.2rem;
-  color: #fcfcfa;
-  margin-top: 1rem;
-  font-weight: 500;
-}
-
-.hero-description {
-  font-size: 1.2rem;
-  margin: 2rem auto 2.5rem;
-  max-width: 700px;
-  color: #fcfcfa;
-}
-
-/* Headshot Image - centered below hero bubble */
-.hero-headshot {
-  display: block;
-  margin: 2.5rem auto 2rem auto;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid white;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
-}
-
-.hero-headshot:hover {
-  transform: scale(1.05);
-}
-
-/* Button */
-.btn {
-  background-color: #0d0d0d;
-  color: white;
-  padding: 0.5rem 1.2rem;      /* smaller vertical and horizontal padding */
-  border-radius: 8px;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;             /* smaller font size */
-  transition: background-color 0.3s ease;
-}
-
-
-.btn:hover {
-  background-color: #334155;
-}
-
-.btn-sm {
-  font-size: 0.85rem;
-  padding: 6px 12px;
-  border-radius: 6px;
-  display: inline-block;
-  background-color: #1a73e8;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.btn-sm:hover {
-  background-color: #155ab6;
-}
-/* Section Styling */
-.section {
-  margin-top: 4rem;
-  max-width: 900px;
-  width: 100%;
-} 
-
-.section.dark {
-  background-color: #000000;
-  padding: 2rem;
-  border-radius: 10px;
-}
-.section.light {
-  background-color: #f1f5f9;
-  padding: 2rem;
-  border-radius: 10px;
-  color: #000000; /* Ensures all text inside this section is black */
-}
-h2 {
-  font-size: 2.4rem;
-  color: #1e293b;
-  margin-bottom: 1.8rem;
-}
-
-/* Skills Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.skill {
-  background-color: white;
-  padding: 1.5rem;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
-}
-
-.skill:hover {
-  transform: translateY(-4px);
-}
-
-/* Experience & Projects */
-.experience-entry {
-  margin-bottom: 2.5rem;
-}
-
-.project-list {
-  list-style-type: disc;
-  padding-left: 2rem;
-}
-
-.project-list li {
-  margin-bottom: 1rem;
-  color: #374151;
-  font-size: 1.4rem;
-}
-
-/* Links */
-a {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-.footer {
-  background-color: #1e293b;
-  color: #f1f5f9;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  margin-top: 4rem;
+/* Typewriter Animation */
+@keyframes typewriter {
+  to {
+    width: 100%;
+  }
 }
 
