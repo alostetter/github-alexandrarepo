@@ -182,7 +182,14 @@ body.home-page .main-content {
   color: white;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
-
+.hero-headshot {
+  display: block;
+  max-width: 200px; /* adjust size as you prefer */
+  width: 100%;
+  height: auto;
+  margin: 2rem auto 0 auto; /* centers image and adds top margin */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
+}
 /* Typewriter Animation */
 @keyframes typewriter {
   to {
