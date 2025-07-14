@@ -64,11 +64,15 @@ body.home-page {
   transform: translateX(4px);
 }
 
-/* Main Content */
 .main-content {
   margin-left: 240px;
   padding: 2rem;
   flex-grow: 1;
+  /* no display flex here by default */
+}
+
+/* Only for the home page */
+body.home-page .main-content {
   display: flex;
   justify-content: center;
   align-items: center;
