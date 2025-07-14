@@ -8,8 +8,7 @@
   box-sizing: border-box;
 }
 
-/* Google Font for cursive handwriting */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
 
 body {
   margin: 0;
@@ -35,7 +34,7 @@ body {
 }
 
 .signature {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'League Script', cursive;
   font-size: 80px;
   fill: none;
   stroke: #000;
