@@ -191,7 +191,11 @@ body.home-page .main-content {
   height: auto !important;
   margin: 2rem auto 0 auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-left: 1rem; /* ← pushes content inside to the right */
+  /* OR use margin-left instead to shift whole image */
+  /* margin-left: 1rem; */
 }
+
 
 /* -----------------------------------------------------
    Experience Section Styles
