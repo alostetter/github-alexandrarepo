@@ -5,6 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alexandra Lostetter | Projects</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Override .main-content from centered if any */
+    .main-content {
+      margin-left: 240px; /* for sidebar */
+      padding: 2rem;
+      max-width: 900px;
+      margin-top: 3rem;
+      display: block;
+      text-align: left;
+    }
+
+    /* Buttons container */
+    .project-buttons {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .project-buttons button {
+      cursor: pointer;
+    }
+
+    /* Project entries spacing */
+    .project-entry {
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Highlight active button */
+    .project-buttons button.active {
+      background-color: #155ab6;
+      color: white;
+      border-color: #155ab6;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
   <!-- Sidebar Navigation -->
@@ -21,21 +62,26 @@
 
   <!-- Main Content -->
   <main class="main-content">
-    <a href="index.html" class="btn-sm back-button">← Back to Home</a>
+    <a href="index.html" class="btn-sm back-button" style="margin-bottom: 1.5rem; display: inline-block;">← Back to Home</a>
 
     <section class="section light" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects</h2>
 
+      <div class="project-buttons" role="tablist" aria-label="Project Navigation">
+        <button class="btn-sm active" data-target="diabetes" role="tab" aria-selected="true" aria-controls="diabetes">Diabetes Risk Prediction</button>
+        <button class="btn-sm" data-target="ncaa" role="tab" aria-selected="false" aria-controls="ncaa">NCAA Tournament Outcome</button>
+      </div>
+
       <ul class="project-list">
 
-        <li class="project-entry" style="margin-bottom: 2rem;">
+        <li class="project-entry" id="diabetes" role="tabpanel" aria-labelledby="diabetes-tab" tabindex="0">
           <strong>Diabetes Risk Prediction Using Machine Learning</strong> – Collaborated on a project analyzing behavioral and demographic data from the CDC’s BRFSS dataset to assess diabetes risk. We employed K-Nearest Neighbors, Decision Trees, and Logistic Regression, addressing class imbalance and refining features through EDA. Our goal was to evaluate model performance in identifying at-risk individuals and propose scalable health interventions.
           <div style="margin-top: 0.5rem;">
             <a href="Slide_for_Project_Presentation.pdf" target="_blank" class="btn-sm">View Presentation PDF</a>
           </div>
         </li>
 
-        <li class="project-entry">
+        <li class="project-entry" id="ncaa" role="tabpanel" aria-labelledby="ncaa-tab" tabindex="0">
           <strong>NCAA Tournament Outcome Prediction</strong> – This paper explores factors that influence win percentage in NCAA Division I men’s basketball by examining both gameplay statistics and recruiting data from 2013 to 2021. It poses two main questions: which gameplay variables best predict win percentage and whether recruiting data can serve as a reliable predictor. Through data collection, feature engineering, and statistical modeling, the paper builds and evaluates multiple predictive models to address these questions.
           <div style="margin-top: 0.5rem;">
             <a href="Stor 320 Presentation.pdf" target="_blank" class="btn-sm">Presentation Slides</a>
@@ -50,10 +96,56 @@
       </p>
     </section>
 
-    <footer class="footer" role="contentinfo">
+    <footer class="footer" role="contentinfo" style="margin-top: 3rem;">
       <p>&copy; 2025 Alexandra Lostetter. All rights reserved.</p>
     </footer>
   </main>
+
+  <script>
+    // Scroll to project and highlight button
+    const buttons = document.querySelectorAll('.project-buttons button');
+    const projects = document.querySelectorAll('.project-entry');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active from all buttons
+        buttons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        // Add active to clicked button
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Scroll to the project section
+        const targetId = btn.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+        if(targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+          targetElement.focus();
+        }
+      });
+    });
+
+    // Optional: Update active button on scroll
+    window.addEventListener('scroll', () => {
+      let scrollPos = window.scrollY || window.pageYOffset;
+      projects.forEach((project, index) => {
+        const top = project.offsetTop - 100;
+        const bottom = top + project.offsetHeight;
+        const btn = buttons[index];
+
+        if (scrollPos >= top && scrollPos < bottom) {
+          buttons.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
 
