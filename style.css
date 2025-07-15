@@ -66,9 +66,6 @@ body.home-page {
 .main-content {
   margin-left: 240px; /* to avoid sidebar */
   padding: 2rem;
-  background-color: #92b8f7;  /* bubble color */
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
   max-width: 900px;
   margin-top: 3rem;
   /* center the main content box */
