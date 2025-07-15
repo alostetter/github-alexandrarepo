@@ -57,20 +57,31 @@ body {
   color: #1a73e8;
 }
 
-/* -----------------------------------------------------
-   Main Content Layout
------------------------------------------------------ */
-.main-content {
-  margin-left: 240px; /* Offset for sidebar */
+main.main-content {
+  margin-left: 240px; /* accommodate sidebar */
   padding: 2rem;
-  max-width: 900px;
   box-sizing: border-box;
   text-align: left;
 }
 
-/* -----------------------------------------------------
-   Homepage (Special Layout)
------------------------------------------------------ */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align everything (including button) to the right */
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.experience-section {
+  width: 100%;
+}
+
+.btn-sm.back-button {
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  align-self: flex-end;
+}
+
 body.home-page {
   display: flex;
   height: 100vh;
