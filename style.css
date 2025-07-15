@@ -14,16 +14,29 @@ body {
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
               url('nc-mountains.jpg') no-repeat center center fixed;
   background-size: cover;
+  /* remove display:flex and centering here */
+}
+
+/* Only homepage content centered */
+body.home-page {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;  /* full viewport height */
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-body.home-page {
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-              url('nc-mountains.jpg') no-repeat center center fixed;
-  background-size: cover;
+body.home-page .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin-left: 0; /* override sidebar margin if needed */
 }
+
 
 /* Sidebar Navigation */
 .sidebar {
@@ -227,21 +240,6 @@ body.home-page, .main-content {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-              url('nc-mountains.jpg') no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-body.home-page {
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-              url('nc-mountains.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
 
 /* Sidebar Navigation */
 .sidebar {
@@ -290,18 +288,6 @@ body.home-page {
   margin-left: auto;
   margin-right: auto;
 }
-
-body.home-page, .main-content {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
 /* Signature Text */
 .signature-text {
   font-family: 'League Script', cursive;
