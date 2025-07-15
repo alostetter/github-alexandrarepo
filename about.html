@@ -5,64 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alexandra Lostetter | About</title>
   <link rel="stylesheet" href="style.css" />
- <style>
-  /* Sidebar fixed */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 240px;
-    height: 100vh;
-    background-color: #000;
-    padding: 2rem 1rem;
-    box-shadow: 2px 0 12px rgba(0,0,0,0.08);
-    overflow-y: auto;
-  }
+  <style>
+    /* Sidebar fixed */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 240px;
+      height: 100vh;
+      background-color: #000;
+      padding: 2rem 1rem;
+      box-shadow: 2px 0 12px rgba(0,0,0,0.08);
+      overflow-y: auto;
+    }
 
-  /* Main content with sidebar margin */
-  main.main-content {
-    margin-left: 240px; /* sidebar width */
-    padding: 2rem;
-    max-width: 900px;
-    margin-top: 3rem;
-    text-align: left;
-    box-sizing: border-box;
-  }
+    /* Main content with sidebar margin */
+    main.main-content {
+      margin-left: 240px; /* sidebar width */
+      padding: 2rem;
+      max-width: 900px;
+      margin-top: 3rem;
+      text-align: left;
+      box-sizing: border-box;
+    }
 
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
+    .about-container {
+      /* just text container now */
+      max-width: 600px;
+      margin-left: auto; /* push container to the right */
+      text-align: right; /* right align text */
+      margin-bottom: 2rem; /* spacing below text before image */
+    }
 
-  .about-text {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 1rem;
-    padding-left: 2in;
-  }
+    .about-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 1rem;
+    }
 
-  .about-figure {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0 0;
-  }
+    /* Separate container just for the image */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
 
-  .hero-headshot {
-    width: 200px !important;
-    height: auto !important;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    display: block;
-  }
+    .hero-headshot {
+      width: 200px !important;
+      height: auto !important;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      display: block;
+    }
 
-  .btn-sm.back-button {
-    margin-bottom: 1.5rem;
-    display: inline-block;
-  }
-</style>
-
+    .btn-sm.back-button {
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
   <!-- Sidebar Navigation -->
@@ -84,6 +85,7 @@
     <section class="section light" aria-labelledby="about-heading">
       <h2 id="about-heading">About Me</h2>
 
+      <!-- Text container -->
       <div class="about-container">
         <div class="about-text">
           <p>
@@ -93,10 +95,11 @@
             I’m seeking full-time roles starting summer 2025, where I can apply my technical and analytical skills to solve real-world problems. I’m passionate about building machine learning models, uncovering insights from complex data, and communicating findings effectively to diverse audiences. I look forward to contributing to a collaborative and impact-driven team while continuing to grow as a data scientist.
           </p>
         </div>
+      </div>
 
-        <figure class="about-figure">
-          <img src="headshot.jpg" alt="Headshot of Alexandra Lostetter" class="hero-headshot" />
-        </figure>
+      <!-- Separate image container centered horizontally -->
+      <div class="image-container">
+        <img src="headshot.jpg" alt="Headshot of Alexandra Lostetter" class="hero-headshot" />
       </div>
     </section>
 
