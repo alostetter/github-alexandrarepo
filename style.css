@@ -200,15 +200,12 @@ body.home-page .main-content {
 }
 
 .experience-entry {
-  background-color: #f9fafb; /* light background */
-  border: 1.5px solid #cbd5e1; /* subtle border */
-  border-radius: 12px;
-  padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: box-shadow 0.3s ease;
+  max-width: 600px;      /* limit width so it doesn't stretch too wide */
+  padding: 1rem 1.2rem;  /* slightly less padding */
+  margin-left: auto;     /* center horizontally */
+  margin-right: auto;
+  font-size: 0.9rem;     /* slightly smaller text */
 }
-
 .experience-entry:hover {
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
