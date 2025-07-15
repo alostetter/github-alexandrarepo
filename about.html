@@ -19,53 +19,57 @@
       overflow-y: auto;
     }
 
-    /* Main content with sidebar margin */
     main.main-content {
-      margin-left: 240px; /* sidebar width */
+      margin-left: 240px;
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin-top: 3rem;
-      text-align: left;
       box-sizing: border-box;
     }
 
-    .about-container {
-      /* just text container now */
-      max-width: 600px;
-      text-align: left; /* right align text */
-      margin-bottom: 2rem; /* spacing below text before image */
+    .about-section {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
     }
 
-    .about-text p {
+    .about-text {
+      flex: 1 1 60%;
       font-size: 1rem;
       line-height: 1.6;
       color: #333;
+    }
+
+    .about-text p {
       margin-bottom: 1rem;
     }
 
-    /* Separate container just for the image */
-    .image-container {
+    .image-wrapper {
+      flex: 0 0 200px;
       display: flex;
       justify-content: center;
-      margin-top: 2rem;
     }
 
     .hero-headshot {
-      width: 200px !important;
-      height: auto !important;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 200px;
+      height: auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-      display: block;
     }
 
     .btn-sm.back-button {
       margin-bottom: 1.5rem;
       display: inline-block;
     }
+
+    footer.footer {
+      margin-top: 3rem;
+    }
   </style>
 </head>
 <body>
-  <!-- Sidebar Navigation -->
+  <!-- Sidebar -->
   <aside class="sidebar" role="navigation" aria-label="Primary Navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -84,8 +88,8 @@
     <section class="section light" aria-labelledby="about-heading">
       <h2 id="about-heading">About Me</h2>
 
-      <!-- Text container -->
-      <div class="about-container">
+      <!-- Text + Image Side-by-Side -->
+      <div class="about-section">
         <div class="about-text">
           <p>
             Hi! I am a recent graduate from UNC Chapel Hill with a BS in Statistics & Analytics and a minor in Data Science. Through internships at Relias and Veradigm, I’ve gained experience in statistical analysis, predictive modeling, and data visualization using Python, R, Power BI, and Excel. I’m also familiar with IDEs such as VSCode, IntelliJ, and RStudio. Currently, I am building my SQL skills with online coursework focused on querying and manipulating large datasets.
@@ -94,15 +98,14 @@
             I’m seeking full-time roles starting summer 2025, where I can apply my technical and analytical skills to solve real-world problems. I’m passionate about building machine learning models, uncovering insights from complex data, and communicating findings effectively to diverse audiences. I look forward to contributing to a collaborative and impact-driven team while continuing to grow as a data scientist.
           </p>
         </div>
-      </div>
 
-      <!-- Separate image container centered horizontally -->
-      <div class="image-container">
-        <img src="headshot.jpg" alt="Headshot of Alexandra Lostetter" class="hero-headshot" />
+        <div class="image-wrapper">
+          <img src="headshot.jpg" alt="Headshot of Alexandra Lostetter" class="hero-headshot" />
+        </div>
       </div>
     </section>
 
-    <footer class="footer" role="contentinfo" style="margin-top: 3rem;">
+    <footer class="footer" role="contentinfo">
       <p>&copy; 2025 Alexandra Lostetter. All rights reserved.</p>
     </footer>
   </main>
