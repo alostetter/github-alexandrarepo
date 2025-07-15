@@ -72,15 +72,14 @@ body.home-page {
   /* no display flex here by default */
 }
 
-/* Only for the home page: center all content vertically and horizontally */
 body.home-page .main-content {
   display: flex;
-  flex-direction: column; /* vertical stack */
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
-  height: 100vh;           /* full viewport height */
-  margin-left: 0;          /* override sidebar margin for full centering */
-  text-align: center;      /* center text */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;  /* full viewport height */
+  padding: 1rem;
 }
 
 /* Section Light Styling */
