@@ -182,24 +182,14 @@ body.home-page .main-content {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* -----------------------------------------------------
-   Headshot Image
------------------------------------------------------ */
 .hero-headshot {
-  display: block;
   width: 200px !important;
   height: auto !important;
-  margin: 2rem auto 0 auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding-left: 1rem; /* ← pushes content inside to the right */
-  /* OR use margin-left instead to shift whole image */
-  /* margin-left: 1rem; */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }
-
-
-/* -----------------------------------------------------
-   Experience Section Styles
------------------------------------------------------ */
 .experience-entry {
   max-width: 600px;
   padding: 1rem 1.2rem;
