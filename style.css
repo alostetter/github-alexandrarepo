@@ -198,31 +198,6 @@ body.home-page .main-content > .draw-container {
   box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin-bottom: 1rem;
-}
-
-.sidebar ul a {
-  color: #e2e8f0;
-  text-decoration: none;
-  font-weight: 500;
-  display: block;
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.sidebar ul a:hover,
-.sidebar ul a.active {
-  background-color: #334155;
-  transform: translateX(4px);
-}
-
 .main-content {
   margin-left: 240px; /* to avoid sidebar */
   padding: 2rem;
