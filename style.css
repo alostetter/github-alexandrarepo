@@ -88,13 +88,6 @@ body.home-page .main-content {
   padding: 1rem;
 }
 
-/* Section Light Styling */
-.section.light {
-  background-color: #f1f5f9;
-  padding: 2rem;
-  border-radius: 10px;
-  color: #000000; /* Ensures all text inside this section is black */
-}
 
 /* Signature Text */
 .signature-text {
