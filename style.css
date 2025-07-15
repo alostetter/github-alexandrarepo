@@ -37,20 +37,6 @@ body.home-page .main-content {
   margin-left: 0; /* override sidebar margin if needed */
 }
 
-
-/* Sidebar Navigation */
-.sidebar {
-  width: 240px;
-  background-color: #000000;
-  height: 100vh;
-  padding: 2rem 1rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-y: auto;
-  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
-}
-
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -74,16 +60,6 @@ body.home-page .main-content {
 .sidebar ul a.active {
   background-color: #334155;
   transform: translateX(4px);
-}
-
-.main-content {
-  margin-left: 240px; /* to avoid sidebar */
-  padding: 2rem;
-  max-width: 900px;
-  margin-top: 3rem;
-  /* center the main content box */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 body.home-page, .main-content {
@@ -419,5 +395,36 @@ body.home-page, .main-content {
   color: #475569; /* slate-600 */
   line-height: 1.5;
 }
+
+/* Sidebar stays fixed on left, not centered */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;       /* your fixed width */
+  height: 100vh;
+  background-color: #000;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.08);
+  overflow-y: auto;
+}
+
+/* Main content takes remaining width, full viewport height */
+.main-content {
+  margin-left: 240px;  /* offset for sidebar width */
+  height: 100vh;       /* full viewport height */
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Optional: constrain the width so text doesn’t get too wide */
+.draw-container {
+  max-width: 700px;
+}
+
 
 
