@@ -178,11 +178,11 @@ body.home-page .main-content {
 }
 .hero-headshot {
   display: block;
-  max-width: 200px !important; /* max width forced */
-  width: 200px !important;     /* fixed width */
+  max-width: 200px !important;
+  width: 200px !important;
   height: auto !important;
-  margin: 2rem auto 0 auto;    /* centered with margin */
-  border-radius: 50%;          /* optional circular */
+  margin: 2rem auto 0 auto;
+  /* border-radius: 50%; */  /* Remove this to keep rectangle shape */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
