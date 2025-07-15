@@ -6,14 +6,44 @@
   <title>Alexandra Lostetter | Contact</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    /* Ensure sidebar is fixed and main content has left margin */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 240px;
+      height: 100vh;
+      background-color: #000;
+      padding: 2rem 1rem;
+      box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
+      overflow-y: auto;
+    }
+
+    main.main-content {
+      margin-left: 240px; /* space for sidebar */
+      padding: 2rem;
+      max-width: 900px;
+      margin-top: 3rem;
+      text-align: left; /* left-align text */
+      display: block;   /* no flex centering */
+      box-sizing: border-box;
+    }
+
     main.main-content p,
     main.main-content h2,
     main.main-content address {
       margin-bottom: 1rem;
       line-height: 1.6;
     }
+
     main.main-content address p {
       margin-bottom: 0.6rem;
+    }
+
+    /* Style for back button */
+    .btn-sm.back-button {
+      margin-bottom: 1.5rem;
+      display: inline-block;
     }
   </style>
 </head>
@@ -34,7 +64,7 @@
 
   <!-- Main Content -->
   <main class="main-content">
-    <a href="index.html" class="btn-sm back-button" style="margin-bottom: 1.5rem; display: inline-block;">← Back to Home</a>
+    <a href="index.html" class="btn-sm back-button">← Back to Home</a>
 
     <section class="section light" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact Me</h2>
@@ -52,7 +82,7 @@
       <p>I’m always open to networking, collaboration, and sharing ideas around data science, analytics, and technology!</p>
     </section>
 
-    <footer class="footer" role="contentinfo">
+    <footer class="footer" role="contentinfo" style="margin-top: 3rem;">
       <p>&copy; 2025 Alexandra Lostetter. All rights reserved.</p>
     </footer>
   </main>
