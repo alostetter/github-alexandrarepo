@@ -37,30 +37,6 @@ body.home-page .main-content {
   margin-left: 0; /* override sidebar margin if needed */
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin-bottom: 1rem;
-}
-
-.sidebar ul a {
-  color: #e2e8f0;
-  text-decoration: none;
-  font-weight: 500;
-  display: block;
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.sidebar ul a:hover,
-.sidebar ul a.active {
-  background-color: #334155;
-  transform: translateX(4px);
-}
 
 body.home-page, .main-content {
   height: 100vh;
@@ -396,17 +372,17 @@ body.home-page, .main-content {
   line-height: 1.5;
 }
 
-/* Sidebar stays fixed on left, not centered */
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 240px;       /* your fixed width */
+  width: 240px;
   height: 100vh;
   background-color: #000;
   padding: 2rem 1rem;
-  box-shadow: 2px 0 12px rgba(0,0,0,0.08);
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
   overflow-y: auto;
+  z-index: 1000;
 }
 
 /* Main content takes remaining width, full viewport height */
