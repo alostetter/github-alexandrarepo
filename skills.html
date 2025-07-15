@@ -5,6 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alexandra Lostetter | Skills</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Override any flex centering from .main-content */
+    .main-content {
+      margin-left: 240px; /* keep sidebar offset */
+      padding: 2rem;
+      max-width: 900px;
+      margin-top: 3rem;
+      /* Remove centering flex */
+      display: block;
+      text-align: left;
+    }
+    /* Skills grid hidden by default except active */
+    .skill {
+      display: none;
+      margin-top: 1rem;
+    }
+    .skill.active {
+      display: block;
+    }
+    /* Button container */
+    .skill-buttons {
+      margin-bottom: 1.5rem;
+    }
+    .skill-buttons button {
+      margin-right: 0.75rem;
+      margin-bottom: 0.75rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <aside class="sidebar">
@@ -24,30 +53,58 @@
 
     <section class="section light">
       <h2>Technical Skills</h2>
+
+      <div class="skill-buttons">
+        <button class="btn-sm" onclick="showSkill('programming')" id="btn-programming">Programming Languages</button>
+        <button class="btn-sm" onclick="showSkill('tools')" id="btn-tools">Tools & Environments</button>
+        <button class="btn-sm" onclick="showSkill('datascience')" id="btn-datascience">Data Science Techniques</button>
+        <button class="btn-sm" onclick="showSkill('others')" id="btn-others">Other Skills</button>
+      </div>
+
       <div class="skills-grid">
-        <div class="skill">
+        <div class="skill" id="programming">
           <strong>Programming Languages:</strong>
           <p>Python, R, SQL, Java, DAX</p>
         </div>
-        <div class="skill">
+        <div class="skill" id="tools">
           <strong>Tools & Environments:</strong>
           <p>Power BI, Excel, VSCode, IntelliJ IDEA, RStudio</p>
         </div>
-        <div class="skill">
+        <div class="skill" id="datascience">
           <strong>Data Science Techniques:</strong>
           <p>Regression Analysis, Predictive Modeling, Machine Learning, Data Visualization, Data Cleaning & Wrangling</p>
         </div>
-        <div class="skill">
+        <div class="skill" id="others">
           <strong>Other Skills:</strong>
           <p>Dashboard Development, Automated Reporting, SQL Query Optimization, Statistical Analysis</p>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" style="margin-top: 3rem;">
       <p>&copy; 2025 Alexandra Lostetter. All rights reserved.</p>
     </footer>
   </div>
+
+  <script>
+    // Function to show one skill category and hide the rest
+    function showSkill(id) {
+      const skillDivs = document.querySelectorAll('.skill');
+      const buttons = document.querySelectorAll('.skill-buttons button');
+
+      skillDivs.forEach(div => {
+        div.classList.toggle('active', div.id === id);
+      });
+
+      buttons.forEach(btn => {
+        btn.classList.toggle('active', btn.id === 'btn-' + id);
+      });
+    }
+
+    // On page load, show the first category by default
+    window.onload = function() {
+      showSkill('programming');
+    };
+  </script>
 </body>
 </html>
-
