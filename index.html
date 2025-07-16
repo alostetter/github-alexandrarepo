@@ -7,6 +7,73 @@
   <link rel="stylesheet" href="style.css" />
   <!-- Google Fonts: Inter and League Script -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Script&display=swap" rel="stylesheet" />
+  <style>
+    /* Sidebar styles */
+    .sidebar {
+      width: 240px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      background-color: #f4f4f4;
+      padding: 2rem 1rem;
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar nav ul li {
+      margin-bottom: 1.5rem;
+    }
+
+    .sidebar nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* Main content layout */
+    .main-content {
+      margin-left: 240px; /* match sidebar width */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .draw-container {
+      text-align: center;
+      max-width: 600px;
+      padding: 2rem;
+    }
+
+    .signature-text {
+      font-family: 'League Script', cursive;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .blurb {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
 <body class="home-page">
   <!-- Sidebar -->
@@ -35,4 +102,3 @@
   </div>
 </body>
 </html>
-
