@@ -6,17 +6,33 @@
   <title>Alexandra Lostetter | About</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Sidebar fixed */
+    /* Sidebar fixed and styled to match homepage */
     .sidebar {
+      width: 240px;
       position: fixed;
       top: 0;
       left: 0;
-      width: 240px;
       height: 100vh;
-      background-color: #000;
+      background-color: #f4f4f4;
       padding: 2rem 1rem;
-      box-shadow: 2px 0 12px rgba(0,0,0,0.08);
-      overflow-y: auto;
+    }
+
+    .sidebar nav ul,
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar nav ul li,
+    .sidebar ul li {
+      margin-bottom: 1.5rem;
+    }
+
+    .sidebar nav ul li a,
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
     }
 
     main.main-content {
@@ -111,4 +127,5 @@
   </main>
 </body>
 </html>
+
 
