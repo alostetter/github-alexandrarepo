@@ -111,7 +111,7 @@ body.home-page .main-content {
   overflow: hidden;
   border-right: 2px solid rgba(0,0,0,0.75);
   width: 0;
-  animation: typewriter 5s steps(40) forwards;
+  animation: typewriter 3s steps(40) forwards;
   color: #000;
   margin-bottom: 0.5rem;
 }
