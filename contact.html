@@ -6,17 +6,33 @@
   <title>Alexandra Lostetter | Contact</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Ensure sidebar is fixed and main content has left margin */
+    /* Unified sidebar style */
     .sidebar {
+      width: 240px;
       position: fixed;
       top: 0;
       left: 0;
-      width: 240px;
       height: 100vh;
-      background-color: #000;
+      background-color: #f4f4f4;
       padding: 2rem 1rem;
-      box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
-      overflow-y: auto;
+    }
+
+    .sidebar nav ul,
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar nav ul li,
+    .sidebar ul li {
+      margin-bottom: 1.5rem;
+    }
+
+    .sidebar nav ul li a,
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
     }
 
     main.main-content {
@@ -24,8 +40,8 @@
       padding: 2rem;
       max-width: 900px;
       margin-top: 3rem;
-      text-align: left; /* left-align text */
-      display: block;   /* no flex centering */
+      text-align: left;
+      display: block;
       box-sizing: border-box;
     }
 
@@ -40,7 +56,6 @@
       margin-bottom: 0.6rem;
     }
 
-    /* Style for back button */
     .btn-sm.back-button {
       margin-bottom: 1.5rem;
       display: inline-block;
