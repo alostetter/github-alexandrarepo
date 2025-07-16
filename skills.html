@@ -6,6 +6,35 @@
   <title>Alexandra Lostetter | Skills</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    /* Sidebar styled to match other pages */
+    .sidebar {
+      width: 240px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      background-color: #f4f4f4;
+      padding: 2rem 1rem;
+    }
+
+    .sidebar nav ul,
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar nav ul li,
+    .sidebar ul li {
+      margin-bottom: 1.5rem;
+    }
+
+    .sidebar nav ul li a,
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
     /* Override any flex centering from .main-content */
     .main-content {
       margin-left: 240px; /* keep sidebar offset */
@@ -16,18 +45,22 @@
       display: block;
       text-align: left;
     }
+
     /* Skills grid hidden by default except active */
     .skill {
       display: none;
       margin-top: 1rem;
     }
+
     .skill.active {
       display: block;
     }
+
     /* Button container */
     .skill-buttons {
       margin-bottom: 1.5rem;
     }
+
     .skill-buttons button {
       margin-right: 0.75rem;
       margin-bottom: 0.75rem;
@@ -36,6 +69,7 @@
   </style>
 </head>
 <body>
+  <!-- Sidebar -->
   <aside class="sidebar">
     <ul>
       <li><a href="index.html">Home</a></li>
